@@ -1,0 +1,16 @@
+<template name="frontpageLeague">
+  <div class="league col-md-3">
+    <div class="league-content">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><a href="{{pathFor 'leagueDetails'}}">{{name}}</a></div>
+        <div class="panel-body">
+          <p class="lead">Top 5</p>
+        </div>
+
+        <!-- List group -->
+        {{> resellersListShort}}
+      </div>
+    </div>
+  </div>
+</template>

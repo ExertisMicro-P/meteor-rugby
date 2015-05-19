@@ -27,7 +27,8 @@ Meteor.startup(function () {
             var newRecord = {
                     name: dataToLoad[record].name.trim(),
                     achieved: parseInt(dataToLoad[record].achieved),
-                    league: dataToLoad[record].league.trim()
+                    league: dataToLoad[record].league.trim(),
+                    searchableLeague:dataToLoad[record].league.trim().toLowerCase()
                 };
             console.log(JSON.stringify(newRecord));
             Resellers.insert(newRecord);

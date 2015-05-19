@@ -1,3 +1,7 @@
 <template name="leagueDetails">
-  {{> leagueItem}}
+ {{#if leagueIsSamsung name}}
+  	{{> leagueItemSamsung}}
+ {{else}}
+  	{{> leagueItem}}
+ {{/if}}
 </template>

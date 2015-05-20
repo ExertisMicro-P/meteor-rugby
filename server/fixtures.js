@@ -71,5 +71,8 @@ Meteor.startup(function () {
 
     } // if USECSVFILE
 
+	Meteor.publish('Resellers', function(){
+	  return Resellers.find();
+	});
 
 });

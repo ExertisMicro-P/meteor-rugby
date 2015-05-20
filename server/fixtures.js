@@ -3,6 +3,8 @@ Meteor.startup(function () {
     var USECSVFILE = true;
 
     if (USECSVFILE) {
+    	Resellers.remove({}) ;
+    	
         // read data from a CSV file
         // @see https://atmospherejs.com/evaisse/csv
         //console.log('pwd='+__meteor_bootstrap__.serverDir);

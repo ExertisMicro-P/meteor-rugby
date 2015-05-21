@@ -1,3 +1,7 @@
 <template name="DetailsPageLeague">
-  {{> leagueItem}}
+   {{#if leagueIsSamsung name}}
+  	{{> leagueItemSamsung}}
+ {{else}}
+  	{{> leagueItem}}
+ {{/if}}
 </template>

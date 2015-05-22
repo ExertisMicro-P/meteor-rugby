@@ -45,6 +45,30 @@ leaguesData = [
     name: 'TP-Link',
   },
 ];
+
+
+//leaguesData = [];
+
 Template.leaguesList.helpers({
-  leagues: leaguesData
+  leagues: leaguesData,
+
+  leaguesX: function() {
+    resellers = Resellers.find({})
+    //var leaguesData = [];
+    resellers.forEach(function(reseller) {
+          var league = {};
+          
+          league.name = reseller.league;
+          leaguesData[league.name] = league;
+        }
+      );
+    console.log(leaguesData);
+
+    var ld = [];
+    for(i in leaguesData) {
+      ld.push(leaguesData[i]);
+    };
+    console.log(ld);
+    return ld;
+  }
 });

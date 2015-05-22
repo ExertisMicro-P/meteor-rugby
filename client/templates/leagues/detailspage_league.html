@@ -2,13 +2,32 @@
  {{#if leagueIsPlantronics name}}
   	{{> leagueItemPlantronics}}
  {{else}}
-  	{{> leagueItem}}
- {{/if}}
+  
+  	{{#if leagueIsIntel name}}
+  		{{> leagueItemIntel}}
+ 	{{else}}
 
-  {{#if leagueIsIntel name}}
-  	{{> leagueItemIntel}}
- {{else}}
-  	{{> leagueItem}}
+ 		{{#if leagueIsBT name}}
+  		{{> leagueItemBT}}
+ 	{{else}}
+
+ 		{{#if leagueIsAPC name}}
+  		{{> leagueItemAPC}}
+ 	{{else}}
+
+ 		{{#if leagueIsZTE name}}
+  		{{> leagueItemZTE}}
+ 	{{else}}
+
+ 		{{#if leagueIsMicrosoft name}}
+  		{{> leagueItemMicrosoft}}
+ 	{{else}}
+  		{{> leagueItem}}
+ 	{{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
  {{/if}}
 
  

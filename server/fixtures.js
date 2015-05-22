@@ -1,6 +1,6 @@
 
 Meteor.startup(function () {
-    var USECSVFILE = true;
+    var USECSVFILE = false;
 
     if (USECSVFILE) {
     	Resellers.remove({}) ;
@@ -45,7 +45,7 @@ Meteor.startup(function () {
 
         // test fixtures
 
-        var numreqd = 80;
+        var numreqd = 150;
         var curnumResellers = Resellers.find().count();
 
         console.log('numreqd=' + numreqd);
@@ -59,8 +59,13 @@ Meteor.startup(function () {
                 var newRecord = {
                     name: Fake.user({fields: ['fullname']}).fullname,
                     achieved: Math.floor((Math.random() * 100) + 1),
-                    league: Fake.fromArray(['Dell', 'Lenovo', 'Samsung', 'Belkin', 'TP-Link', 'Netgear'])
+                    league: Fake.fromArray(['Dell-Server', 'Dell-Computing', 'Intel', 
+                        'Dell-Visual', 'Microsoft', 'Acer-Computing','Acer-Visual','Plantronics',
+                        'Fujitsu','Lenovo-Computing','Lenovo-Server','APC','ZTE','BT','TP-Link'
+                        ])
                 };
+
+                newRecord.searchableLeague = newRecord.league.trim().toLowerCase()
                 Resellers.insert(newRecord);
 
                 console.log(newRecord);

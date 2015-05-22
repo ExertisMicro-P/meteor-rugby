@@ -4,3 +4,5 @@
     filteredResellers = Resellers.find( {league: leagueData.name}).count();
     return filteredResellers;
 });
+
+Meteor.subscribe('Resellers');

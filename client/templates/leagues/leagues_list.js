@@ -1,22 +1,49 @@
 leaguesData = [
   {
-    name: 'Dell',
+    name: 'Dell-Server',
   },
   {
-    name: 'Samsung',
+    name: 'Dell-Computing',
   },
   {
-    name: 'Lenovo',
+    name: 'Dell-Visual',
   },
   {
-    name: 'Belkin',
+    name: 'Intel',
+  },
+  {
+    name: 'Microsoft',
+  },
+  {
+    name: 'Acer-Computing',
+  },
+  {
+    name: 'Acer-Visual',
+  },
+  {
+    name: 'Plantronics',
+  },
+  {
+    name: 'Fujitsu',
+  },
+  {
+    name: 'Lenovo-Computing',
+  },
+  {
+    name: 'Lenovo-Server',
+  },
+  {
+    name: 'APC',
+  },
+  {
+    name: 'ZTE',
+  },
+  {
+    name: 'BT',
   },
   {
     name: 'TP-Link',
   },
-  {
-    name: 'Netgear',
-  }
 ];
 Template.leaguesList.helpers({
   leagues: leaguesData

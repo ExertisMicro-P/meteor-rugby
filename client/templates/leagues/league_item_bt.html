@@ -1,15 +1,18 @@
-<!-- Displays one league table on the Details Page (shows all Resellers, not just the top 5) -->
-<template name="leagueItem">
+<template name="leagueItemBT">
+  <div class="col-md-8 side_bar">
+    Left Hand column
+    <h1>This is BT</h1>
+  </div>
   <div class="league col-md-3">
     <div class="league-content">
       <div class="panel panel-default">
         <!-- Default panel contents -->
-        <div class="panel-heading {{name}}"><a href="{{pathFor 'detailsPageLeague'}}">{{name}}</a></div>
+        <div class="panel-heading"><a href="{{pathFor 'leagueDetails'}}">{{name}}</a></div>
         <div class="panel-body">
           <p>Total {{resellersForThisLeagueCount name}}</p>
         </div>
 
-        <!-- list of all the resellers -->
+        <!-- List group -->
         {{> resellersList}}
       </div>
     </div>

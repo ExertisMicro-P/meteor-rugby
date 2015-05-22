@@ -59,6 +59,16 @@ Template.DetailsPageLeague.helpers({
       return name=="Microsoft";
   },
 
+       leagueIsFujitsu: function(name) {
+    console.log('leagueIsFujitsu:'+name);
+      return name=="Microsoft";
+  },
+
+  leagueIsFujitsu: function(name) {
+    console.log('leagueIsFujitsu:'+name);
+      return name=="Fujitsu";
+  },
+
 
   hideondetailspage: function() {
     return 'hideondetailspage';

@@ -22,6 +22,10 @@
  		{{#if leagueIsMicrosoft name}}
   		{{> leagueItemMicrosoft}}
  	{{else}}
+
+ 		{{#if leagueIsFujitsu name}}
+  		{{> leagueItemFujitsu}}
+ 	{{else}}
   		{{> leagueItem}}
  	{{/if}}
  {{/if}}
@@ -29,6 +33,7 @@
  {{/if}}
  {{/if}}
  {{/if}}
+  {{/if}}
 
  
 </template>

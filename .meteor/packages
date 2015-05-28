@@ -13,3 +13,6 @@ iron:router
 evaisse:csv
 msavin:mongol
 meteorhacks:kadira
+ian:accounts-ui-bootstrap-3
+accounts-password
+zimme:iron-router-auth

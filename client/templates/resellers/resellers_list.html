@@ -1,15 +1,15 @@
 <template name="resellersList">
-  <ul class="list-group">
+  <table class="table">
     {{#each resellersForThisLeague ../name}}
       {{> reseller}}
     {{/each}}
-  </ul>
+  </table>
 </template>
 
 <template name="resellersListShort">
-  <ul class="list-group">
+  <table class="table">
     {{#each resellersForThisLeague ../name 5}}
       {{> reseller}}
     {{/each}}
-  </ul>
+  </table>
 </template>

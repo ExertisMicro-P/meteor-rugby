@@ -1,23 +1,74 @@
 leaguesData = [
   {
-    name: 'Dell',
+    name: 'Dell-Server', //Dell-Server
   },
   {
-    name: 'Samsung',
+   name: 'Intel', 
   },
   {
-    name: 'Lenovo',
+    name: 'Microsoft',
   },
   {
-    name: 'Belkin',
+    name: 'Dell-Computing',
+  },
+  {
+    name: 'Dell-Visual',
+  },
+  {
+    name: 'Acer-Computing',
+  },
+  {
+    name: 'Acer-Visual',
+  },
+  {
+    name: 'Plantronics',
+  },
+  {
+    name: 'Fujitsu',
+  },
+  {
+    name: 'Lenovo-Computing',
+  },
+  {
+    name: 'Lenovo-Server',
+  },
+  {
+    name: 'APC',
+  },
+  {
+    name: 'ZTE',
+  },
+  {
+    name: 'BT',
   },
   {
     name: 'TP-Link',
   },
-  {
-    name: 'Netgear',
-  }
 ];
+
+
+//leaguesData = [];
+
 Template.leaguesList.helpers({
-  leagues: leaguesData
+  leagues: leaguesData,
+
+  leaguesX: function() {
+    resellers = Resellers.find({})
+    //var leaguesData = [];
+    resellers.forEach(function(reseller) {
+          var league = {};
+          
+          league.name = reseller.league;
+          leaguesData[league.name] = league;
+        }
+      );
+    console.log(leaguesData);
+
+    var ld = [];
+    for(i in leaguesData) {
+      ld.push(leaguesData[i]);
+    };
+    console.log(ld);
+    return ld;
+  }
 });

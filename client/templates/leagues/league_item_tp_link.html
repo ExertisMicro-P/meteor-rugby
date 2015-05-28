@@ -1,0 +1,41 @@
+<template name="leagueItemTpLink">
+
+
+    <div class="intro" id="panel_intro">
+        <div class="intro-body">
+          <h2>Win a trip to the Rugby World Cup</h2>
+          <p>We are giving you the chance to win a VIP experience at the England vs Wales game on the 26th September 2015 courtesy of Exertis. The prize includes a four course meal in a suite within Twickenham stadium, category A match ticket, a complimentary bar and much more.</p>
+        </div> <!--INTRO-BODY-->
+      </div><!-- END INTRO-->
+     <div class="container item">
+  <div class="col-md-4 side_bar">
+    
+    <h2>Rules</h2>
+       
+       <p>The top eight achieving resellers will win their place at the biggest sporting<br/> event of the year.</p>
+       <p>Incentive runs between 1st June and 31st August 2015 </p>
+
+    <h2>Terms and Conditions</h2>
+
+        <p>Terms and Conditions apply. To accept any of the prizes given out, your business will accept tax liability for the prize. One ticket available per reseller.</p>
+
+    <h2>Your unique username</h2> 
+           
+        <p>You should have been sent a unique username. If you haven’t receive, please speak to your Account Manager</p>
+  </div>
+
+  <div class="league col-md-8 inner col-sm-12 col-xs-12">
+    <div class="league-content">
+      <div class="panel">
+        <!-- Default panel contents -->
+        <div class="panel-heading "><a href="{{pathFor 'leagueDetails'}}">{{name}}</a></div>
+        <div class="panel-body">
+          <p>Total {{resellersForThisLeagueCount name}}</p>
+        </div>
+        <!-- List group -->
+        {{> resellersList}}
+      </div>
+    </div>
+  </div>
+</div>
+</template>

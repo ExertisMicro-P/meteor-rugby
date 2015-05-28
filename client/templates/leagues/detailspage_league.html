@@ -1,7 +1,82 @@
 <template name="DetailsPageLeague">
-   {{#if leagueIsSamsung name}}
-  	{{> leagueItemSamsung}}
+ {{#if leagueIsPlantronics name}}
+  	{{> leagueItemPlantronics}}
  {{else}}
-  	{{> leagueItem}}
+  
+  	{{#if leagueIsIntel name}}
+  		{{> leagueItemIntel}}
+ 	{{else}}
+
+ 		{{#if leagueIsBT name}}
+  		{{> leagueItemBT}}
+ 	{{else}}
+
+ 		{{#if leagueIsAPC name}}
+  		{{> leagueItemAPC}}
+ 	{{else}}
+
+ 		{{#if leagueIsZTE name}}
+  		{{> leagueItemZTE}}
+ 	{{else}}
+
+ 		{{#if leagueIsMicrosoft name}}
+  		{{> leagueItemMicrosoft}}
+ 	{{else}}
+
+ 		{{#if leagueIsFujitsu name}}
+  		{{> leagueItemFujitsu}}
+ 	{{else}}
+
+ 	{{#if leagueIsDellServer name}}
+  		{{> leagueItemDellServer}}
+ 	{{else}}
+
+ 	{{#if leagueIsDellComputing name}}
+  		{{> leagueItemDellComputing}}
+ 	{{else}}
+
+ 	{{#if leagueIsDellVisual name}}
+  		{{> leagueItemDellVisual}}
+ 	{{else}}
+
+ 	{{#if leagueIsAcerComputing name}}
+  		{{> leagueItemAcerComputing}}
+ 	{{else}}
+
+ 	{{#if leagueIsAcerVisual name}}
+  		{{> leagueItemAcerVisual}}
+ 	{{else}}
+
+ 	{{#if leagueIsLenovoComputing name}}
+  		{{> leagueItemLenovoComputing }}
+ 	{{else}}
+
+ 	{{#if leagueIsLenovoServer name}}
+  		{{> leagueItemLenovoServer }}
+ 	{{else}}
+
+ 	{{#if leagueIsTpLink name}}
+  		{{> leagueItemTpLink }}
+ 	{{else}}
+  		{{> leagueItem}}
+ 	{{/if}}
  {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+
+
 </template>
+
+
+

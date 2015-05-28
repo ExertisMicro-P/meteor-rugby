@@ -26,6 +26,38 @@
  		{{#if leagueIsFujitsu name}}
   		{{> leagueItemFujitsu}}
  	{{else}}
+
+ 	{{#if leagueIsDellServer name}}
+  		{{> leagueItemDellServer}}
+ 	{{else}}
+
+ 	{{#if leagueIsDellComputing name}}
+  		{{> leagueItemDellComputing}}
+ 	{{else}}
+
+ 	{{#if leagueIsDellVisual name}}
+  		{{> leagueItemDellVisual}}
+ 	{{else}}
+
+ 	{{#if leagueIsAcerComputing name}}
+  		{{> leagueItemAcerComputing}}
+ 	{{else}}
+
+ 	{{#if leagueIsAcerVisual name}}
+  		{{> leagueItemAcerVisual}}
+ 	{{else}}
+
+ 	{{#if leagueIsLenovoComputing name}}
+  		{{> leagueItemLenovoComputing }}
+ 	{{else}}
+
+ 	{{#if leagueIsLenovoServer name}}
+  		{{> leagueItemLenovoServer }}
+ 	{{else}}
+
+ 	{{#if leagueIsTpLink name}}
+  		{{> leagueItemTpLink }}
+ 	{{else}}
   		{{> leagueItem}}
  	{{/if}}
  {{/if}}
@@ -33,9 +65,17 @@
  {{/if}}
  {{/if}}
  {{/if}}
-  {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
+ {{/if}}
 
- 
+
 </template>
 
 

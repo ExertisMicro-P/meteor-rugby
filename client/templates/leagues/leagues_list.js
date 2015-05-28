@@ -1,18 +1,18 @@
 leaguesData = [
   {
-    name: 'Dell-Server',
+    name: 'Dell-Server', //Dell-Server
+  },
+  {
+   name: 'Intel', 
+  },
+  {
+    name: 'Microsoft',
   },
   {
     name: 'Dell-Computing',
   },
   {
     name: 'Dell-Visual',
-  },
-  {
-    name: 'Intel',
-  },
-  {
-    name: 'Microsoft',
   },
   {
     name: 'Acer-Computing',

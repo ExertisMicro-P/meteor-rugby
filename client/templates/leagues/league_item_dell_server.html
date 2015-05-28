@@ -1,6 +1,6 @@
-<template name="leagueItemIntel">
+<template name="leagueItemDellServer">
 
-
+       
     <div class="intro" id="panel_intro">
         <div class="intro-body">
           <h2>Win a trip to the Rugby World Cup</h2>
@@ -8,6 +8,7 @@
         </div> <!--INTRO-BODY-->
       </div><!-- END INTRO-->
      <div class="container item">
+      <!-- START SIDE_BAR  -->
   <div class="col-md-4 side_bar">
     
     <h2>Rules</h2>
@@ -22,10 +23,11 @@
     <h2>Your unique username</h2> 
            
         <p>You should have been sent a unique username. If you haven’t receive, please speak to your Account Manager</p>
-  </div>
+  
+  </div><!-- END SIDE_BAR-->
 
   <div class="league col-md-8 inner col-sm-12 col-xs-12">
-    <div class="league-content">
+    <div class="league-content details_table">
       <div class="panel">
         <!-- Default panel contents -->
         <div class="panel-heading "><a href="{{pathFor 'leagueDetails'}}">{{name}}</a></div>
@@ -37,5 +39,5 @@
       </div>
     </div>
   </div>
-</div>
+</div><!-- END CONTAINER ITEM-->
 </template>

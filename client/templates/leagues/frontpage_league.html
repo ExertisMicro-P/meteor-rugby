@@ -7,11 +7,11 @@
       <div class="panel panel-default">
         <!-- Default panel contents -->
         <a href="{{pathFor 'detailsPageLeague'}}"><div class="panel-heading {{name}}"><!--<a href="{{pathFor 'detailsPageLeague'}}">{{name}}</a>--></div></a>
-        <div class="panel-body {{name}}">
+        <!--<div class="panel-body {{name}} list">-->
           <!--<h2 class="{{name}}"><a href="{{pathFor 'detailsPageLeague'}}">{{name}}</a></h2>-->
-          <p class="lead"><!--{{name}}--></p>
+          <!--<p class="lead">{{name}}</p>-->
 
-        </div><!-- END PANEL BODY -->
+        <!--</div> END PANEL BODY -->
 
         <!-- List group -->
         {{> resellersListShort}}
@@ -19,7 +19,9 @@
         <div class="panel-footer league_footer"><a class="btn btn-default" href="{{pathFor 'detailsPageLeague'}}" role="button">{{name}} Full League Table</a>
         </div> <!-- END PANEL FOOTER -->
       </div> <!-- END DEFAULT PANEL CONTENTS -->
-      
     </div><!-- END LEAGUE-CONTENT -->
+
   </div><!-- END LEAGUE COL -->
+
+
 </template>

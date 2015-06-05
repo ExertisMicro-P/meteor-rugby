@@ -1,36 +1,58 @@
 <template name="leagueItemTpLink">
 
 
-    <div class="intro" id="panel_intro">
+    <!--<div class="intro" id="panel_intro">
         <div class="intro-body">
           <h2>Win a trip to the Rugby World Cup</h2>
           <p>We are giving you the chance to win a VIP experience at the England vs Wales game on the 26th September 2015 courtesy of Exertis. The prize includes a four course meal in a suite within Twickenham stadium, category A match ticket, a complimentary bar and much more.</p>
+        </div> INTRO-BODY-->
+      <!--</div>END INTRO-->
+
+
+      <!-- BEGIN JUMBOTRON--> 
+      <div class="jumbotron {{hideondetailspage}}">
+        
+        <img src="/images/exertis_rugby_cup_banner.jpg" alt="Exertis Rugby Cup Predictor" >
+
+        <div class="intro" id="panel_intro">
+        <div class="intro-body">
+          <h1>Win a trip to the Rugby World Cup</h1>
+          <p>We are giving you the chance to win a VIP experience at the England vs Wales game on the 26th September 2015 courtesy of Exertis. The prize includes a four course meal in a suite within Twickenham stadium, category A match ticket, a complimentary bar and much more.</p>
         </div> <!--INTRO-BODY-->
       </div><!-- END INTRO-->
+
+    </div><!-- END JUMBOTRON-->
+
+
+
      <div class="container item">
   <div class="col-md-4 side_bar">
+
+     <img src="/images/tp-link.jpg" alt="TP-Link Logo">
     
-    <h2>Rules</h2>
+    <h4>Rules</h4>
        
        <p>The top eight achieving resellers will win their place at the biggest sporting<br/> event of the year.</p>
        <p>Incentive runs between 1st June and 31st August 2015 </p>
 
-    <h2>Terms and Conditions</h2>
+    <h4>Terms and Conditions</h4>
 
         <p>Terms and Conditions apply. To accept any of the prizes given out, your business will accept tax liability for the prize. One ticket available per reseller.</p>
 
-    <h2>Your unique username</h2> 
+    <h4>Your unique username</h4> 
            
         <p>You should have been sent a unique username. If you haven’t receive, please speak to your Account Manager</p>
   </div>
 
   <div class="league col-md-8 inner col-sm-12 col-xs-12">
     <div class="league-content">
-      <div class="panel">
+      <div class="panel league">
         <!-- Default panel contents -->
-        <div class="panel-heading "><a href="{{pathFor 'leagueDetails'}}">{{name}}</a></div>
-        <div class="panel-body">
-          <p>Total {{resellersForThisLeagueCount name}}</p>
+        <div class="panel-heading name"><!--<a href="{{pathFor 'leagueDetails'}}">{{name}}</a>-->
+          <h2>League Table</h2>
+        </div>
+        <div class="panel-body count">
+          <!--<p>Total {{resellersForThisLeagueCount name}}</p>-->
         </div>
         <!-- List group -->
         {{> resellersList}}

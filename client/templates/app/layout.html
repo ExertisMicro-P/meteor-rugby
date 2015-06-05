@@ -22,11 +22,7 @@
   
   <!-- BEGIN CONTAINER-->
   <div class="container">
-    <!--<header class="navbar navbar-default" role="navigation"> 
-      <div class="navbar-header">
-        <a class="navbar-brand" href="{{pathFor 'leaguesList'}}">Exertis Rugby Leagues</a>
-      </div>
-    </header>-->
+   
 
 
 
@@ -36,7 +32,24 @@
     <div id="main">
       
       {{> yield}}
+
+
     </div><!-- END MAIN-->
 
   </div><!-- END CONTAINER-->
+  <footer>
+    <div class="container footer">
+      <div class="row">
+      <div class="col-md-9">
+        <p class="small hidden-xs">© Exertis 2015 - All rights reserved<br>
+          Exertis (UK) Ltd, trading as Exertis, Shorten Brook Way, Altham Business Park, Altham, Accrington, BB5 5YJ. <br>
+          Tel: North (01282) 776776 or South (01256) 707070</p>
+      </div>
+
+      <div class="col-md-3"><img src="/images/exertis-micro-p.gif" alt="Exertis"></div>
+    </div>
+    
+    </div>
+
+  </footer>
 </template><!-- END TEMPLATE-->

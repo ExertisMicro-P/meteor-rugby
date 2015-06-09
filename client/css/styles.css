@@ -144,10 +144,15 @@ background: #fff;
 }
 
 footer{
-  width: 100%;
-  height: 190px;
   background: #f51E1E;
+  /*position:fixed;
+   left:0px;
+   bottom:0px;*/
+   height:140px;
+   width:100%;
+
 }
+
 
 .footer p {
   color: #FFFFFF;
@@ -163,7 +168,7 @@ footer img{
 .container.footer{
   /*background: blue;*/
   width: 60%;
-  height: 190px;
+  height: 100px;
 }
 
 .table.resellerlist{
@@ -369,89 +374,91 @@ img.rugby-logo {
 
 .intro-body{
 	font-size: 14px;
+  text-align: center;
 }
 
 .intro h1{
 	font-size: 32px;
 	font-weight: bold;
-  color: green;
+ text-align: center;
 	}
 
     .leagues{
   margin-top: -9%;
 }
 
+
   	  			  	  	 /*DELL-SERVER-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Dell-Server{
-	 background: url("./images/dell-server-responsive.jpg") no-repeat center center;
+	 background: url("./images/DELL-SERVER-responsive_V2.jpg") no-repeat center center;
 }
   			  	  	 /*DELL-COMPUTING-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Dell-Computing{
-	 background: url("./images/dell-computing-responsive.jpg") no-repeat center center;
+	 background: url("./images/DELL-COMPUTING-responsive_V2.jpg") no-repeat center center;
 }
   			  	  	 /*DELL-VISUAL-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Dell-Visual{
-	 background: url("./images/dell-visual-responsive.jpg") no-repeat center center;
+	 background: url("./images/DELL-visual-responsive_V2.jpg") no-repeat center center;
 }
   		  	  	 /*INTEL-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Intel{
-	 background: url("./images/intel-computing-responsive.jpg") no-repeat center center;
+	 background: url("./images/INTEL-COMPUTING-responsive_V1.jpg") no-repeat center center;
 }
 
   	  	  	 /*MICROSOFT-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Microsoft{
-	 background: url("./images/microsoft-computing-responsive.jpg") no-repeat center center;
+	 background: url("./images/MICROSOFT-COMPUTING-responsive_V2.jpg") no-repeat center center;
 }
 
   	  	 /*ACER-COMPUTING-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Acer-Computing{
-	 background: url("./images/acer-computing-responsive.jpg") no-repeat center center;
+	 background: url("./images/acer-computing-responsive_v2.jpg") no-repeat center center;
 }
 
   	 /*ACER-VISUAL-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Acer-Visual{
-	 background: url("./images/acer-visual-responsive.jpg") no-repeat center center;
+	 background: url("./images/acer-visual-responsive_v2.jpg") no-repeat center center;
 }
   	  	  	  	  				 /*PLANTRONICS-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Plantronics{
-	 background: url("./images/plantronics-uc-responsive.jpg") no-repeat center center;
+	 background: url("./images/plantronic-uc-responsive_v1.jpg") no-repeat center center;
 }
 
   	  	  	  				 /*FUJITSU-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Fujitsu{
-	 background: url("./images/fujitsu-server-responsive.jpg") no-repeat center center;
+	 background: url("./images/fujitsu-server-responsive_v2.jpg") no-repeat center center;
 	 
 }
   	  	  				 /*Lenovo-Computing-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Lenovo-Computing{
-	 background: url("./images/lenovo-computing-responsive.jpg") no-repeat center center;
+	 background: url("./images/lenovo-computing-responsive_v1.jpg") no-repeat center center;
 }
 
   	  				 /*Lenovo-server-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Lenovo-Server{
-	 background: url("./images/lenovo-server-responsive.jpg") no-repeat center center;
+	 background: url("./images/lenovo-server-responsive_v2.jpg") no-repeat center center;
 }
 
   				 /*APC-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.APC{
-	 background: url("./images/apc-networks-responsive.jpg") no-repeat center center;
+	 background: url("./images/apc-networks-responsive_v2.jpg") no-repeat center center;
 }
 
 
   			 /*ZTE-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.ZTE{
-	 background: url("./images/zte-mobile-responsive.jpg") no-repeat center center;
+	 background: url("./images/zte-mobile-responsive_v2.jpg") no-repeat center center;
 }
 
   		 /*BT-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.BT{
-	 background: url("./images/bt-uc-responsive.jpg") no-repeat center center;
+	 background: url("./images/bt-uc-responsive_v2.jpg") no-repeat center center;
 }
 
   	  /*TP-LINK-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
 
 .panel-heading.TP-Link{
-	 background: url("./images/tp-link-networks-responsive.jpg") no-repeat center center;
+	 background: url("./images/TP-Links-responsive_v2.jpg") no-repeat center center;
 }
   }/*END MEDIA*/
 
@@ -604,7 +611,8 @@ border: 1px solid #ffffff ;
 
 .side_bar{
   padding-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 12%;
+
 }
 
 .side_bar h2{
@@ -616,9 +624,6 @@ border: 1px solid #ffffff ;
   line-height: 21px;
 }
 
-.details_table{
-  margin-top: -3%;
-}
 }/*END MEDIA*/
 
  /******END******  min-width: 580px  max-width: 979px DETAILS HTML *****END*******/
@@ -628,7 +633,8 @@ border: 1px solid #ffffff ;
  @media (min-width: 300px) and (max-width: 579px) {
 
    .intro-body{
-    margin-top: 15%;
+    margin-top: 5%;
+    text-align: center;
   }
 
 .intro h2{
@@ -641,7 +647,7 @@ border: 1px solid #ffffff ;
 .side_bar{
   padding-top: 2%;
   margin-bottom: 2%;
-  margin-top: 2%;
+  margin-bottom: 23%;
 }
 
 .side_bar h2{

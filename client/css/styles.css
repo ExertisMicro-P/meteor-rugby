@@ -27,7 +27,7 @@ p, h4, h5, h6{
 
 img.rugby-logo {
   max-width: 150px;
-  padding-top: 10px;
+  padding-top: 22px;
   }
 
   .exertis_info{
@@ -67,8 +67,17 @@ img.rugby-logo {
 	color: rgba(0, 0, 0, 0.7);*/
 	
 }
-
-
+.panel {
+	border-radius: 0;	
+}
+.btn {
+	border-radius: 0;	
+}
+.btn-default {
+	border: none;
+	color: #FFFFFF;
+	background-color: #888888;	
+}
 
 .intro {
 	/*background-color: rgba(255, 255, 255, 0.6);
@@ -83,14 +92,15 @@ background: #fff;
 
 .intro-body{
 	font-size: 18px;
-	letter-spacing: -0.1px;
-	line-height:24px;
 	margin-top: 2%;
 	font-weight: 500;
 	text-align: left;
 	color: #000000;
 	padding: 15px;
   font-family: 'Muli', sans-serif;
+}
+.intro-body p{
+    margin-top: 10px;
 }
 
 .intro h1{
@@ -110,8 +120,8 @@ background: #fff;
 .league_footer{ text-align: right; color: #000000;}
 
 .league_footer a:hover{
-  color: #f51e1e;
-  background: #ffffff;
+  color: #FFFFFF;
+  background: #F51E1E;
 }
 
 /*league table styles*/
@@ -177,7 +187,7 @@ footer img{
 
 .table.resellerlist td{
  font-size: 16px;
- padding: 10px 10px 10px 0px;
+ padding: 10px;
  background: #eeeeee;
 border: 1px solid #ffffff
 }
@@ -210,6 +220,15 @@ border: 1px solid #ffffff
 
 .panel-heading.Dell-Visual{
 	 background: url("./images/panel-header-dell-visual-2.jpg") no-repeat center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+.panel-heading.D-Link {
+	 background: url("./images/panel-header-dlink.jpg") no-repeat center center;
 	 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -400,6 +419,9 @@ img.rugby-logo {
   	.panel-heading.Dell-Visual{
 	 background: url("./images/DELL-visual-responsive_V2.jpg") no-repeat center center;
 }
+	.panel-heading.D-Link{
+	 background: url("./images/dlink-responsive.jpg") no-repeat center center;
+}
   		  	  	 /*INTEL-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Intel{
 	 background: url("./images/INTEL-COMPUTING-responsive_V1.jpg") no-repeat center center;
@@ -531,15 +553,15 @@ img.rugby-logo {
   padding-bottom: 2%;
   margin-top: -50px;
   margin-bottom: 30px;
-  height: 550px;
 }
 
 .side_bar h4{
   font-weight: bold;
+  padding: 15px 0 5px 0;
 }
 
 .side_bar p{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -584,13 +606,12 @@ border: 1px solid #ffffff ;
 .panel.league{
   width: 100%;
   overflow: scroll;
-  height: 550px;
+  height: 710px;
   margin-top: -73px;
-  
 }
-
-
-
+td.rank {
+	text-align: center;
+}
 
 
 

@@ -33,6 +33,9 @@ leaguesData = [
     name: 'Lenovo-Server',
   },
   {
+    name: 'D-Link',
+ },
+  {
     name: 'APC',
   },
   {
@@ -44,6 +47,7 @@ leaguesData = [
   {
     name: 'TP-Link',
   },
+
 ];
 
 

@@ -61,7 +61,7 @@ Meteor.startup(function () {
                     achieved: Math.floor((Math.random() * 100) + 1),
                     league: Fake.fromArray(['Dell-Server', 'Dell-Computing', 'Intel', 
                         'Dell-Visual', 'Microsoft', 'Acer-Computing','Acer-Visual','Plantronics',
-                        'Fujitsu','Lenovo-Computing','Lenovo-Server','APC','ZTE','BT','TP-Link'
+                        'Fujitsu','Lenovo-Computing','Lenovo-Server','APC','ZTE','BT','TP-Link', 'D-Link'
                         ])
                 };
 

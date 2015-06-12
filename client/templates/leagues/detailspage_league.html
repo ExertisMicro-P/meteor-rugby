@@ -58,6 +58,9 @@
  	{{#if leagueIsTpLink name}}
   		{{> leagueItemTpLink }}
  	{{else}}
+	{{#if leagueIsDLink name}}
+  		{{> leagueItemDLink }}
+ 	{{else}}
   		{{> leagueItem}}
  	{{/if}}
  {{/if}}
@@ -74,6 +77,7 @@
  {{/if}}
  {{/if}}
  {{/if}}
+  {{/if}}
 
 
 </template>

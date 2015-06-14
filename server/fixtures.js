@@ -45,7 +45,7 @@ Meteor.startup(function () {
 
         // test fixtures
 
-        var numreqd = 150;
+        var numreqd = 300;
         var curnumResellers = Resellers.find().count();
 
         console.log('numreqd=' + numreqd);

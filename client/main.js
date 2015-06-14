@@ -6,3 +6,7 @@
 });
 
 Meteor.subscribe('Resellers');
+
+Template.layout.onRendered(function() {
+  $('[data-toggle="tooltip"]').tooltip()
+})

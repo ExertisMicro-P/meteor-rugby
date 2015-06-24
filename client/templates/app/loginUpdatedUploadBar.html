@@ -1,0 +1,14 @@
+<template name="loginUpdatedUploadBar">
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="nav navbar-nav navbar-left">{{> loginButtons}}</ul>
+        </div>
+        <div class="col-md-6 updatedat text-right">
+            Updated: {{updatedAt}}
+        </div>
+    </div>
+    {{#if currentUser}}
+        {{> upload_bootstrap fileTypes='.csv' multiple=false}}
+    {{/if}}
+
+</template>

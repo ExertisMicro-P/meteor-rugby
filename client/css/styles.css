@@ -4,8 +4,8 @@
 
 /* BEGIN Large desktop */
 
-body { 
-  background: url("./images/rugby_pitch.jpg") no-repeat center center fixed; 
+body {
+  background: url("./images/rugby_pitch.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -65,18 +65,18 @@ img.rugby-logo {
 	/*background-color: rgba(0, 0, 0, 0.7);
 	background: rgba(0, 0, 0, 0.7);
 	color: rgba(0, 0, 0, 0.7);*/
-	
+
 }
 .panel {
-	border-radius: 0;	
+	border-radius: 0;
 }
 .btn {
-	border-radius: 0;	
+	border-radius: 0;
 }
 .btn-default {
 	border: none;
 	color: #FFFFFF;
-	background-color: #888888;	
+	background-color: #888888;
 }
 
 .intro {
@@ -181,6 +181,10 @@ footer img{
   height: 100px;
 }
 
+.updatedat {
+    color: white;
+}
+
 .table.resellerlist{
   overflow: hidden;
 }
@@ -197,7 +201,7 @@ border: 1px solid #ffffff
 /*DELL-SERVER-LEAGUE-STYLES*/
 
 .panel-heading.Dell-Server{
-	 background: url("./images/panel-header-dell-server-2.jpg") no-repeat center center; 
+	 background: url("./images/panel-header-dell-server-2.jpg") no-repeat center center;
 	 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -370,7 +374,7 @@ border: 1px solid #ffffff
 
 
 /*********END********** LARGE DESKTOP *********END********** */
-  
+
 
 
 
@@ -379,7 +383,7 @@ border: 1px solid #ffffff
 
   /* *****BEGIN******  Portrait tablet to landscape and desktop *****BEGIN****** */
   /* *****BEGIN******  min-width: 580px  max-width: 979px *****BEGIN****** */
-  
+
   @media (min-width: 580px) and (max-width: 979px) {
 
 img.rugby-logo {
@@ -449,7 +453,7 @@ img.rugby-logo {
   	  	  	  				 /*FUJITSU-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Fujitsu{
 	 background: url("./images/fujitsu-server-responsive_v2.jpg") no-repeat center center;
-	 
+
 }
   	  	  				 /*Lenovo-Computing-LEAGUE-STYLES --- Portrait tablet to landscape and desktop*/
   	.panel-heading.Lenovo-Computing{
@@ -490,26 +494,26 @@ img.rugby-logo {
 
 
 
- 
+
   /* *****BEGIN******  min-width: 300px  max-width: 579px *****BEGIN****** */
 
  @media (min-width: 300px) and (max-width: 579px) {
 
 .intro-body{
 	font-size: 10px;
-	
+
 }
 
 .intro h1{
 	font-size: 26px;
 	font-weight: bold;
-	
+
   	}
 
   	#main{
 	margin-top: -12%;
 }
- 
+
      .leagues{
   margin-top: -11%;
 }
@@ -537,7 +541,7 @@ img.rugby-logo {
   font-size: 52px;
   color: #f51e1e;
   text-align: center;
-  
+
 }
 
 .container.item{
@@ -617,7 +621,7 @@ td.rank {
 
  /* *****BEGIN******  Portrait tablet to landscape and desktop DETAILS HTML *****BEGIN****** */
   /* *****BEGIN******  min-width: 580px  max-width: 979px DETAILS HTML *****BEGIN****** */
-  
+
 
 @media (min-width: 580px) and (max-width: 979px) {
 
@@ -691,10 +695,10 @@ td.rank {
 
 img.rugby-logo {
   max-width: 100px;
-  
+
   }
   .exertis_info{
-   
+
       font-family: 'Muli', sans-serif;
       font-size: 12px;
       margin-top: -25px;
@@ -706,11 +710,11 @@ img.rugby-logo {
 
   img.rugby-logo {
   max-width: 100px;
-  
+
   }
 
   .exertis_info{
-   
+
       font-family: 'Muli', sans-serif;
       font-size: 12px;
       position:relative;

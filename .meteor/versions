@@ -11,8 +11,13 @@ binary-heap@1.0.3
 blaze@2.1.2
 blaze-tools@1.0.3
 boilerplate-generator@1.0.3
+browser-policy@1.0.4
+browser-policy-common@1.0.3
+browser-policy-content@1.0.4
+browser-policy-framing@1.0.4
 callback-hook@1.0.3
 check@1.0.5
+cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
 dburles:mongo-collection-instances@0.3.3
 ddp@1.1.0
@@ -23,8 +28,10 @@ evaisse:csv@0.1.4
 fastclick@1.0.3
 geojson-utils@1.0.3
 gwendall:session-json@0.1.7
+handlebars@1.0.3
 harrison:babyparse@1.0.1
 harrison:papa-parse@1.0.19
+hitchcott:platform@0.0.1
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -53,6 +60,7 @@ meteortoys:toykit@0.5.0
 minifiers@1.1.5
 minimongo@1.0.8
 mobile-status-bar@1.0.3
+momentjs:moment@2.10.3
 mongo@1.1.0
 mongo-livedata@1.0.8
 msavin:mongol@1.0.70
@@ -73,6 +81,8 @@ spacebars-compiler@1.0.6
 srp@1.0.3
 stylus@1.0.7
 templating@1.1.1
+tomi:upload-jquery@2.1.5
+tomi:upload-server@1.2.4
 tracker@1.0.7
 twbs:bootstrap@3.3.4
 ui@1.0.6
@@ -80,4 +90,5 @@ underscore@1.0.3
 url@1.0.4
 webapp@1.2.0
 webapp-hashing@1.0.3
+yogiben:pretty-email@0.0.6
 zimme:iron-router-auth@3.0.1

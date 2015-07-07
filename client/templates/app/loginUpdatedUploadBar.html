@@ -10,7 +10,8 @@
         </div>
         <div class="row">
             {{#if currentUser}}
-                {{> upload_bootstrap fileTypes='.csv' multiple=false}}
+                {{!-- {{> upload_bootstrap fileTypes='.csv' multiple=false}} --}}
+                {{> dropzone fileTypes='.csv' multiple=false}}
             {{/if}}
         </div>
     </div>

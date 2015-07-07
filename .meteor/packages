@@ -11,8 +11,15 @@ anti:fake
 iron:router
 evaisse:csv
 msavin:mongol
+browser-policy
 meteorhacks:kadira
 ian:accounts-ui-bootstrap-3
 accounts-password
 zimme:iron-router-auth
 audit-argument-checks
+tomi:upload-server
+tomi:upload-jquery
+momentjs:moment
+yogiben:pretty-email
+email
+hitchcott:platform

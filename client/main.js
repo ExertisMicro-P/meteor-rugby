@@ -6,7 +6,9 @@
 });
 
 Meteor.subscribe('Resellers');
+Meteor.subscribe('DataUpdatedAt');
 
 Template.layout.onRendered(function() {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
+

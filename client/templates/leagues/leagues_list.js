@@ -1,9 +1,9 @@
 leaguesData = [
   {
-    name: 'Dell-Server', //Dell-Server
+    name: 'Dell-Server',
   },
   {
-   name: 'Intel', 
+   name: 'Intel',
   },
   {
     name: 'Microsoft',
@@ -61,7 +61,7 @@ Template.leaguesList.helpers({
     //var leaguesData = [];
     resellers.forEach(function(reseller) {
           var league = {};
-          
+
           league.name = reseller.league;
           leaguesData[league.name] = league;
         }

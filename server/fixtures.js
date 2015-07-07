@@ -62,7 +62,7 @@ function dynamicallyCreateFixtures() {
         var target = numreqd - curnumResellers;
         for (var i = 0; i < target; i++) {
             var newRecord = {
-                name: Fake.user({fields: ['fullname']}).fullname,
+                name: Fake.user({fields: ['fullname']}).fullname + ' gdsfgjhgdsfjhgdsfgsdg',
                 achieved: Math.floor((Math.random() * 100) + 1),
                 league: Fake.fromArray(['Dell-Server', 'Dell-Computing', 'Intel',
                     'Dell-Visual', 'Microsoft', 'Acer-Computing', 'Acer-Visual', 'Plantronics',
@@ -88,11 +88,22 @@ Meteor.startup(function () {
 
     // see https://github.com/tomitrescak/meteor-uploads
 
-    uploadfolder = '../../../../../.uploads/';
-    console.log(process.cwd());
+        // see https://atmospherejs.com/mrt/platform.js
+    console.log('Platform is '+platform);
+    console.log('OS is |'+platform.os+'|');
+
+    if (platform.os == 'Win32') {
+      console.log("Setting uploadfolder");
+      uploadfolder = '../../../../../.uploads/';
+    } else {
+      console.log("You are running linux!");
+      uploadfolder = process.cwd()+'../.uploads/';
+    }
+
+    console.log('uploadfolder='+uploadfolder);
 
     UploadServer.init({
-        tmpDir: '../../../../../.uploads/tmp/',
+        tmpDir: uploadfolder+'tmp/',
         uploadDir: uploadfolder,
         checkCreateDirectories: true, //create the directories for you
         overwrite: true,
@@ -120,7 +131,9 @@ Meteor.startup(function () {
             // load test data
             dynamicallyCreateFixtures();
         }
-    } // if USECSVFILE
+    } else {
+        dynamicallyCreateFixtures();
+    }// if USECSVFILE
 
     Meteor.publish('Resellers', function () {
         return Resellers.find();

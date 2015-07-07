@@ -32,15 +32,17 @@
 
         <!-- BEGIN MAIN-->
         <div id="main">
-
+{{#if currentUser}}
             {{> yield}}
-
+{{/if}}
 
         </div><!-- END MAIN-->
 
-        {{> loginUpdatedUploadBar}}
 
     </div><!-- END CONTAINER-->
+
+            {{> loginUpdatedUploadBar}}
+
     <footer>
         <div class="container footer">
             <div class="row">

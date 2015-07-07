@@ -5,11 +5,11 @@ Meteor.startup(function () {
     console.log('Platform is '+platform);
     console.log('OS is |'+platform.os+'|');
 
-    if (platform.os == 'freebsd' || platform.os == 'linux') {
-      console.log("You are running linux!");
-    } else if (platform.os == 'Win32') {
+    if (platform.os == 'Win32') {
       console.log("Setting process.env.MAIL_URL");
       process.env.MAIL_URL = 'smtp://baspop:25/';
+    } else {
+      console.log("You are running linux!");        
     }
 
     Accounts.emailTemplates.from = 'Exertis Rugby Cup <webteam@exertis.co.uk>';

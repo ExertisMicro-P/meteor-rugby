@@ -29,6 +29,16 @@ img.rugby-logo {
   max-width: 150px;
   padding-top: 22px;
   }
+  
+.jumbotron img.sponsor {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.sponsor p {
+	font-size: 16px;
+	margin-bottom: 0;	
+}
 
   .exertis_info{
     float: right;
@@ -87,7 +97,7 @@ background: #fff;
 -webkit-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.75);
 	box-shadow: -1px 4px 34px 0px rgba(0,0,0,0.75);
-	padding: 0% 5% 0% 5%;
+	padding: 0% 2% 0% 2%;
 }
 
 .intro-body{

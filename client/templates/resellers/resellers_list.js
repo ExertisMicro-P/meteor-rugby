@@ -1,4 +1,7 @@
-
+/**
+ *
+ * Returns lists of ALL Resellers for a particular League (i.e. a full list for the details page)
+ */
 Template.resellersList.helpers({
   resellers: function() {
     return Resellers.find();
@@ -18,6 +21,10 @@ Template.resellersList.helpers({
 
 
 
+/**
+ *
+ * Returns lists of the first X Resellers for a particular League (i.e. a short list for the front page)
+ */
 Template.resellersListShort.helpers({
 
   resellersForThisLeague: function(leagueName, limit) {

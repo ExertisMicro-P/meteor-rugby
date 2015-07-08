@@ -616,12 +616,114 @@ border: 1px solid #ffffff ;
 .panel.league{
   width: 100%;
   overflow: scroll;
-  height: 710px;
   margin-top: -73px;
 }
 td.rank {
 	text-align: center;
 }
+.panel.league.dell {
+	height: 729px;	
+}
+.panel.league.intel {
+	height: 853px;	
+}
+.panel.league.microsoft {
+	height: 780px;	
+}
+.panel.league.dell2 {
+	height: 730px;	
+}
+.panel.league.dell3 {
+	height: 710px;	
+}
+.panel.league.acer {
+	height: 750px;	
+}
+.panel.league.acer2 {
+	height: 750px;	
+}
+.panel.league.plantronics {
+	height: 728px;
+}
+.panel.league.fujitsu {
+	height: 760px;
+}
+.panel.league.lenovo {
+	height: 729px;
+}
+.panel.league.lenovo2 {
+	height: 688px;
+}
+.panel.league.dlink {
+	height: 709px;
+}
+.panel.league.apc {
+	height: 729px;
+}
+.panel.league.zte {
+	height: 688px;
+}
+.panel.league.bt {
+	height: 709px;
+}
+.panel.league.tplink {
+	height: 781px;
+}
+
+/* NP - Tablet size for even league tables */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.panel.league.dell {
+		height: 793px;	
+	}
+	.panel.league.intel {
+		height: 980px;	
+	}
+	.panel.league.microsoft {
+		height: 886px;	
+	}
+	.panel.league.dell2 {
+		height: 792px;	
+	}
+	.panel.league.dell3 {
+		height: 792px;	
+	}
+	.panel.league.acer {
+		height: 813px;	
+	}
+	.panel.league.acer2 {
+		height: 813px;	
+	}
+	.panel.league.plantronics {
+		height: 793px;
+	}
+	.panel.league.fujitsu {
+		height: 845px;
+	}
+	.panel.league.lenovo {
+		height: 813px;
+	}
+	.panel.league.lenovo2 {
+		height: 772px;
+	}
+	.panel.league.dlink {
+		height: 792px;
+	}
+	.panel.league.apc {
+		height: 814px;
+	}
+	.panel.league.zte {
+		height: 772px;
+	}
+	.panel.league.bt {
+		height: 792px;
+	}
+	.panel.league.tplink {
+		height: 865px;
+	}
+}
+
+/* END */ 
 
 
 

@@ -33,14 +33,18 @@ function loadFixturesFromFile(filetoload) {
 
     //console.log('dataToLoad ='+JSON.stringify(dataToLoad));
     for (record in dataToLoad) {
-        var newRecord = {
-            name: dataToLoad[record].name.trim(),
-            achieved: parseInt(dataToLoad[record].achieved),
-            league: dataToLoad[record].league.trim(),
-            searchableLeague: dataToLoad[record].league.trim().toLowerCase()
-        };
-        console.log(JSON.stringify(newRecord));
-        Resellers.insert(newRecord);
+        if (dataToLoad[record]) {
+            var newRecord = {
+                name: dataToLoad[record].name.trim(),
+                achieved: parseInt(dataToLoad[record].achieved),
+                league: dataToLoad[record].league.trim(),
+                searchableLeague: dataToLoad[record].league.trim().toLowerCase()
+            };
+            console.log(JSON.stringify(newRecord));
+            Resellers.insert(newRecord);
+        } else {
+            console.log('Error loading record '+record);
+        }
     }
     return true;
 }
